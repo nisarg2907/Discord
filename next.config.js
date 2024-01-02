@@ -6,5 +6,11 @@ const nextConfig = {
         ]
     }
 }
+module.exports = {
+    experimental: {
+      serverComponents: false,
+    },
+  };
+  
 
 module.exports = nextConfig
