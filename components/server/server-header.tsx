@@ -23,7 +23,7 @@ interface ServerHeaderProps {
   role?: MemberRole;
 }
 
-const ServerHeader = ({ server, role }: ServerHeaderProps) => {
+export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
     const {onOpen} = useModal();
   const isAdmin = role === MemberRole.ADMIN;
   const isModerator = isAdmin || role === MemberRole.MODERATOR;
@@ -99,4 +99,4 @@ const ServerHeader = ({ server, role }: ServerHeaderProps) => {
   );
 };
 
-export default ServerHeader;
+
