@@ -9,9 +9,7 @@ import { Button } from "@/components/ui/button";
 import { NavigationSidebar } from "@/components/navigation/navigation-sidebar";
 import { ServerSidebar } from "@/components/server/server-sidebar";
 
-const SideBarRenderer = ({children}:{children:React.ReactNode})=>{
- return <div>{children}</div>
-}
+
 
 export const MobileToggle = ({
   serverId
@@ -30,8 +28,7 @@ export const MobileToggle = ({
              {/* @ts-expect-error Async Server Component*/}
           <NavigationSidebar />
         </div>
-       
-        {/* <ServerSidebar serverId={serverId} /> */}
+      
       </SheetContent>
     </Sheet>
   )
