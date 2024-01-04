@@ -20,6 +20,8 @@ import { useState } from "react";
 
 
 
+
+
 export const InviteModal = () => {
    const {onOpen,isOpen,onClose,type,data} = useModal();
   const origin = useOrigin();
@@ -49,6 +51,7 @@ export const InviteModal = () => {
       console.log(error);
     } finally {
       setIsLoading(false);
+      
     }
   }
  
