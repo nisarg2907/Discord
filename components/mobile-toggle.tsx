@@ -11,6 +11,7 @@ import { ServerSidebar } from "@/components/server/server-sidebar";
 
 
 
+
 export const MobileToggle = ({
   serverId
 }: {
@@ -28,6 +29,7 @@ export const MobileToggle = ({
              {/* @ts-expect-error Async Server Component*/}
           <NavigationSidebar />
         </div>
+
       
       </SheetContent>
     </Sheet>
